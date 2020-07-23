@@ -40,6 +40,11 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
 TARGET_NO_BOOTLOADER := true
 
+#Init
+TARGET_INIT_VENDOR_LIB := libinit_ugglite
+TARGET_RECOVERY_DEVICE_MODULES := libinit_ugglite
+TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
+
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000 androidboot.selinux=permissive
